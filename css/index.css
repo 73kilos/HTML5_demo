@@ -1,0 +1,435 @@
+.carousel {
+	height: 460px;
+	position: relative;
+}
+/*!!!儿子选择器 只能选中儿子*/
+.carousel .pics > ul > li {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 460px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center top;	
+}
+.carousel .pics ul li.pic1 {
+	background-image: url(../images/bannerdz01.png);
+}
+.carousel .pics ul li.pic2 {
+	background-image: url(../images/banner2.jpg);
+}
+.carousel .pics ul li.pic3 {
+	background-image: url(../images/banner3.jpg);
+}
+.carousel .pics ul li.cur {
+	z-index: 5;
+}
+.carousel .pics ul li .info {
+	width: 460px;
+	padding: 65px 0px 0px 539px;
+}
+.carousel .pics ul li .info .title {
+	padding-left: 2px;
+	height: 66px;
+}
+.carousel .pics ul li .info .title .img {
+	width: 66px;
+	height: 66px;
+	float: left;
+}
+.carousel .pics ul li .info .title .txt {
+	margin-left: 15px;
+	float: left;
+}
+.carousel .pics ul li .info .title .txt h3 {
+	font-size: 38px;
+	font-weight: bold;
+	line-height: 46px;
+	height: 46px;
+	color: #fff;
+}
+.carousel .pics ul li .info .title .txt h6 {
+	font-size: 12px;
+	height: 21px;
+	line-height: 21px;
+	color: #fff;
+}
+.carousel .pics ul li .info .title .ongame {
+	width: 115px;
+	height: 37px;
+	float: right;
+	padding-top: 10px;
+	position: relative;
+}
+.carousel .pics ul li .info .title .ongame dl dt {
+	height: 37px;
+	font-size: 12px;
+	line-height: 37px;
+	color: #000;
+	background: url(../images/online.png) no-repeat;
+	padding-left: 16px;	
+}
+.carousel .pics ul li .info .title .ongame dl dd {
+	position: absolute;
+	/*相对于ongame左上角*/
+	top: 47px;
+	left: 0px;
+	width: 100px;
+	height: 64px;
+	padding: 2px 0px 0px 15px;
+	background-color: #fff;
+	border-radius: 0 0 20px 20px;
+	display: none;
+}
+.carousel .pics ul li .info .title .ongame dl dd a {
+	width: 23px;
+	height: 24px;
+	float: left;
+	margin-right: 8px;
+	margin-bottom: 4px;
+	background: url(../images/online.png) no-repeat;
+}
+.carousel .pics ul li .info .title .ongame dl dd a.no1 {
+	background-position: -1px -47px;
+}
+.carousel .pics ul li .info .title .ongame dl dd a.no2 {
+	background-position: -26px -47px;
+}
+.carousel .pics ul li .info .title .ongame dl dd a.no3 {
+	background-position: -51px -47px;
+}
+.carousel .pics ul li .info .title .ongame dl dd a.no4 {
+	background-position: -101px -47px;
+}
+.carousel .pics ul li .info .title .ongame:hover dl dd {
+	display: block;
+}
+.carousel .pics ul li .info .title .ongame:hover dl dt {
+	background-position: -120px 0px;
+}
+.carousel .pics ul li .info div.word p {
+	font-size: 12px;
+	line-height: 30px;
+	color: #fff;
+	height: 60px;
+	margin-top: 16px;
+}
+.carousel .pics ul li .info div.word h4 {
+	height: 36px;
+	line-height: 36px;
+	font-size: 18px;
+	color: #FBC660;
+	padding-left: 30px;
+	font-weight: bold;
+	background: url(../images/download.png) no-repeat 5px -32px;
+}
+.carousel .pics ul li .info .lists {
+	width: 447px;
+	height: 106px;
+	margin-top: 10px;
+	overflow: hidden;
+	border-radius: 8px;
+}
+.carousel .pics ul li .info .lists ul li {
+	float: left;
+	width: 83px;
+	height: 106px;
+	margin-right: 1px;	
+}
+.carousel .pics ul li .info .lists ul li a {
+	display: block;
+	height: 49px;
+	line-height: 49px;
+	padding-top: 57px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	background: rgba(255,255,255,.4) url(../images/pad.png) no-repeat -210px -182px;
+}
+.carousel .pics ul li .info .lists ul li a.no2 {
+	background-position: -218px 18px;
+}
+.carousel .pics ul li .info .lists ul li a.no3 {
+	background-position: -218px -78px;
+}
+.carousel .pics ul li .info .lists ul li a.no4 {
+	background-position: -217px -273px;
+}
+.carousel .pics ul li .info .lists ul li:hover {
+	background-color: #C7D6E5;
+}
+.carousel .pics ul li .info .lists ul li.pic {
+	width: 96px;
+	height: 93px;
+	padding-top: 13px;
+	padding-left: 15px;
+	background-color: #C9BEEF;
+	margin-right: 0;
+	background-image: none;
+} 
+.carousel .pics ul li .info .lists ul li.pic img {
+	width: 80px;
+	height: 80px;
+}
+.carousel .circles {
+	width: 66px;
+	height: 12px;
+	padding-right: 15px;
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
+	margin-left: -33px;
+	z-index: 10;
+}
+.carousel .circles ol li {
+	width: 12px;
+	height: 12px;
+	float: left;
+	border-radius: 50%;
+	background-color: #90D7FA;
+	margin-right: 15px;
+}
+.carousel .circles ol li.third {
+	margin-right: 0;
+}
+.carousel .circles ol li.active {
+	background-color: #fff;
+}
+.midea {
+	width: 1001px;
+	margin-top: 60px;
+	height: 185px;
+}
+.midea .video {
+	width: 1001px;
+	height: 191px;
+}
+.midea .video ul li {
+	width: 218px;
+	height: 191px;
+	float: left;
+	margin-right: 43px;
+}
+.midea .video ul li.nomgr {
+	margin-right: 0;
+}
+.midea .video ul li div {
+	width: 218px;
+	height: 191px;
+}
+.midea .video ul li div img {
+	width: 100%;
+}
+.midea .video ul li div h4 {
+	font-size: 12px;
+	color: #000;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+}
+.midea .video ul li div p {
+	height: 32px;
+	font-size: 12px;
+	color:#000;
+	text-align: center;
+}
+.midea .video ul li div p a  {
+	display: block;
+}
+.midea .video ul li div p a span {
+	padding-left: 10px;
+	background: url(../images/arrow.png) no-repeat center right;
+}
+.midea .video ul li:hover {
+	background: #38B774;
+}
+.midea .video ul li:hover div h4 {
+	color: #fff;
+}
+.midea .video ul li:hover div p a {
+	color: #fff;
+}
+.midea .video ul li:hover div p a span {
+	background: url(../images/arrow_hover.png) no-repeat center right;
+} 
+.line {
+	width: 1000px;
+	height: 38px;
+	border-bottom: 1px solid #DBE1E7;
+}
+.line .cir {
+	width: 67px;
+	height: 12px;
+	position: relative;
+	left: 50%;
+	margin-left: -33.5px;
+	top: 32px;
+	background-color: #fff;
+}
+.line .cir ol {
+	width: 67px;
+	height: 12px;
+	padding-left: 17px;
+}
+.line .cir ol li {
+	width: 12px;
+	height: 12px;
+	margin-right: 14px;
+	float: left;
+	border-radius: 50%;
+	background-color: #B5C0CB;
+	margin-top: -6px;
+}
+.line .cir ol li.on {
+	background-color: #2FBC71;
+}
+.news {
+	width: 1000px;
+	height: 367px;
+	padding-top: 48px;
+	background: url(../images/indexmainbg.jpg) no-repeat center bottom;
+}
+.news .left {
+	width: 500px;
+	height: 310px;
+	float: left;
+	background: url(../images/bynewsbg.jpg) no-repeat 0 -10px;
+	background-color: #fff;
+}
+.news .left .tupian {
+	width: 500px;
+	height: 110px;
+	position: relative;;
+}
+.news .left .tupian a {
+	display: block;
+	width: 64px;
+	height: 26px;
+	border: 1px solid #2FBC71;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	font-size: 9px;
+	line-height: 26px;
+	border-radius: 3px;
+	text-align: center;
+	margin-left: -30px;
+	color: #2FBC71;
+}
+.news .left .tupian a:hover {
+	color: #fff;
+	background-color: #2FBC71;
+}
+.news .left .tupian a i {
+	font-weight: normal;
+	position: relative;
+	left: 0;
+	top: -4px;
+	color: #2FBC71;
+}
+.news .left .aside {
+	width: 500px;
+	height: 200px;
+	margin-top: 10px;
+}
+.news .left .aside p {
+	width: 470px;
+	height: 48px;
+	font-size: 12px;
+	line-height: 50px;
+	padding-left: 7px;
+	border-bottom: 1px solid #DBE1E7;
+}
+.news .left .aside p a {
+	display: block;
+	width: 400px;
+	height: 49px;
+	float: left;
+	/*!文字内容过长时设置出现省略号*/
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.news .left .aside p span {
+	float: right;
+	height: 49px;
+	font-size: 12px;
+	color: #AFC2D6;
+}
+.news .right {
+	float: right;
+	width: 500px;
+	height: 310px;
+	background: url(../images/byhrbg3.jpg) no-repeat;
+}
+.news .right .jobs {
+	width: 203px;
+	height: 70px;
+	padding-left: 80px;
+	padding-top: 40px;
+}
+.news .right .jobs .zhao {
+	width: 137px;
+	height: 48px;
+	float: left;
+}
+.news .right .jobs .zhao h3 {
+	float: left;
+	font-size: 27px;
+	font-weight: bold;
+	color: #fff;
+}
+.news .right .jobs .zhao p {
+	font-size: 9px;
+	color: #fff;
+	margin-top: 2px;
+}
+.news .right .jobs .more {
+	width: 66px;
+	height: 48px;
+	float: right;
+}
+.news .right .jobs .more a {
+	float: right;
+	width: 64px;
+	height: 26px;
+	border: 1px solid #fff;
+	text-align: center;
+	line-height: 26px;
+	color: #fff;
+	margin-top: 8px;
+	border-radius: 3px;
+}
+.news .right .jobs .more a:hover {
+	color: #30bc73;
+	background-color: #fff;
+}
+.news .right .jobs .more a i {
+	position: relative;
+	left: 0;
+	top: -4px;
+}
+.news .right .job {
+	width: 305px;
+	height: 173px; 
+	padding-left: 20px;
+}
+.news .right dl dt a {
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	height: 21px;
+	line-height: 21px;
+}
+.news .right dl dd a {
+	display: block;
+	font-size: 12px;
+	color: #fff;
+	height: 37px;
+	line-height: 37px;
+	border-bottom: 1px solid #DBE1E7;
+}
+
+
+ 
